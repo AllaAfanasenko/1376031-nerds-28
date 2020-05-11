@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alla Afanasenko](https://up.htmlacademy.ru/htmlcss/28/user/1376031).
-* Наставник: `Анастасия Полозова`.
+* Наставник: [Анастасия Полозова] (https://htmlacademy.ru/profile/id258631).
 
 ---
 
