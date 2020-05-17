@@ -42,10 +42,11 @@
       <section>
         <!-- will be added later -->
         <h3>Стоимость</h3>
-        <div>
+        <form>
           <input type="range" min="0" max="20000" step="500">
-          <p>от <input type="number" min="0" max="20000" step="500"> до <input type="number" min="0" max="20000" step="500"></p>
-        </div>
+          <p><label>от<input type="number" min="0" max="20000" step="500"></label></p>
+          <p><label>до<input type="number" min="0" max="20000" step="500"></label></p>
+        </form>
 
       </section>
 
@@ -60,30 +61,27 @@
 
       <form>
         <h3>Сетка</h3>
-        <div>
+        <fieldset>
           <input type="radio" name="grid-filter" value="grid-1">Адаптивная
           <input type="radio" name="grid-filter" value="grid-2">Фиксированная
           <input type="radio" name="grid-filter" value="grid-filter-2">Резиновая
-        </div>
+        </fieldset>
       </form>
 
 
       <form>
         <h3>Особенности</h3>
-        <div>
+        <fieldset>
           <input type="checkbox" name="feature-filter" value="feature-1">Слайдер
           <input type="checkbox" name="feature-filter" value="feature-2">Блок Преимуществ
           <input type="checkbox" name="feature-filter" value="feature-3">Новости
           <input type="checkbox" name="feature-filter" value="feature-4">Галерея
           <input type="checkbox" name="feature-filter" value="feature-5">Корзина
-        </div>
+        </fieldset>
       </form>
 
       <button type="button">Показать</button>
     </section>
-
-
-
 
 
     <section>
@@ -92,18 +90,12 @@
       <ul>
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-1.png" alt="Скриншот сайта Sedona">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-1.png" alt="Скриншот сайта Sedona"></p>
           </a>
           <div>
             <h3>Sedona</h3>
-            <p>
-              Информационный сайт для туристов
-            </p>
+            <p>Информационный сайт для туристов</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
@@ -111,95 +103,65 @@
 
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-2.png" alt="Скриншот приложения Pink App">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-2.png" alt="Скриншот приложения Pink App"></p>
           </a>
           <div>
             <h3>Pink app</h3>
-            <p>
-              Продуктовый лендинг приложения для iOS и Android
-            </p>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
 
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-3.png" alt="Скриншот сайта Borodinski">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-3.png" alt="Скриншот сайта Borodinski"></p>
           </a>
           <div>
             <h3>Borodinski</h3>
-            <p>
-              Стильный и модный Барбершоп
-            </p>
+            <p>Стильный и модный Барбершоп</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
 
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-4.png" alt="Скриншот сайта Mishka">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-4.png" alt="Скриншот сайта Mishka"></p>
           </a>
           <div>
             <h3>Mishka</h3>
-            <p>
-              Милые штучки ручной работы для дома
-            </p>
+            <p>Милые штучки ручной работы для дома</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
 
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-5.png" alt=" Скриншот сайта  Интересная учёба">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-5.png" alt=" Скриншот сайта  Интересная учёба"></p>
           </a>
           <div>
             <h3>Mishka</h3>
-            <p>
-              Сайт платформы онлайн-обучения
-            </p>
+            <p>Сайт платформы онлайн-обучения</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
 
         <li>
           <a href="#">
-            <p>
-              <img src="img/browser-header.png" alt="browser Header">
-            </p>
-            <p>
-              <img src="img/product-6.png" alt=" Скриншот сайта  Крафтовый квас">
-            </p>
+            <p><img src="img/browser-header.png" alt="browser Header"></p>
+            <p><img src="img/product-6.png" alt=" Скриншот сайта  Крафтовый квас"></p>
           </a>
           <div>
             <h3>Mishka</h3>
-            <p>
-              Сайт производителя крафтового кваса
-            </p>
+            <p>Сайт производителя крафтового кваса</p>
             <button type="button">9900 ₽</button>
           </div>
         </li>
       </ul>
-<!-- паггинация -->
+      <!-- паггинация -->
       <ul>
         <li>
           <a href="#">1</a>
@@ -224,19 +186,12 @@
     <!-- Will be added later -->
 
     <section>
-      <h2>
-        Контактная информация
-      </h2>
-      <p>
-        NЁRDS DESIGN STUDIO
-      </p>
-      <p>
-        191186, Санкт-Петербург, <br>
+      <h2>Контактная информация</h2>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p>191186, Санкт-Петербург, <br>
   ул. Б. Конюшенная, д. 19/8  
       </p>
-      <p>
-        тел. +7 (812) 275-75-75
-      </p>
+      <p> тел. +7 (812) 275-75-75</p>
       <a href="#">Напишите нам</a>
       <div>
         Map will be here
@@ -248,16 +203,18 @@
     <section>
       <!-- H2 will be hidden -->
       <h2>Давайте дружить</h2>
-      <p>
-        Давайте дружить, это выгодно!
-      </p>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
       </ul>
     </section>
 
