@@ -11,7 +11,7 @@
   <header>
     <nav>
       <a href="index.html">
-        <img src="https://via.placeholder.com/150x100" alt="Логотип дизайн студии «Nёrds»">
+        <img src="../img/header/nerds-logo.svg" alt="Логотип дизайн-студии Nёrds">
       </a>
       <ul>
         <li>
@@ -21,13 +21,15 @@
           <a href="#">Клиенты</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a href="catalog.html">Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
         </li>
       </ul>
-      <a href="#">Корзина</a>
+      <a href="#">
+        <img src="../img/header/cart-icon.svg" alt="Корзина">
+      </a>
     </nav>
   </header>
 
@@ -55,8 +57,12 @@
         <span>По цене</span>
         <span>По типу</span>
         <span>По названию</span>
-        <span>вниз</span>
-        <span>вверх</span>
+        <div>
+          <img src="../img/catalog/filters/icon-down-dir.svg" alt="Сортировать по убыванию">
+        </div>
+        <div>
+          <img src="../img/catalog/filters/icon-up-dir.svg" alt="Сортировать по возрастанию">
+        </div>
       </section>
 
       <form>
@@ -90,8 +96,10 @@
       <ul>
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <div><img src="img/product-1.png" alt="Скриншот сайта Sedona"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-sedona-1.jpg" alt="Скриншот сайта Sedona"></div>
+            </div>
           </a>
           <div>
             <h3>Sedona</h3>
@@ -103,8 +111,10 @@
 
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <div><img src="img/catalog/cards/img-sedona 1.jpg" alt="Скриншот приложения Pink App"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-pink-1.jpg" alt="Скриншот приложения Pink App"></div>
+            </div>
           </a>
           <div>
             <h3>Pink app</h3>
@@ -115,8 +125,10 @@
 
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <div><img src="img/product-3.png" alt="Скриншот сайта Borodinski"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-barbershop-1.jpg" alt="Скриншот сайта Borodinski"></div>
+            </div>
           </a>
           <div>
             <h3>Borodinski</h3>
@@ -127,8 +139,10 @@
 
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <dvi><img src="img/product-4.png" alt="Скриншот сайта Mishka"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-mishka-1.jpg" alt="Скриншот сайта Mishka"></div>
+            </div>
           </a>
           <div>
             <h3>Mishka</h3>
@@ -139,8 +153,10 @@
 
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <div><img src="img/product-5.png" alt=" Скриншот сайта  Интересная учёба"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-aplus-1.jpg" alt=" Скриншот сайта  Интересная учёба"></div>
+            </div>
           </a>
           <div>
             <h3>a Plus</h3>
@@ -151,8 +167,10 @@
 
         <li>
           <a href="#">
-            <div><img src="img/browser-header.png" alt="browser Header"></div>
-            <div><img src="img/product-6.png" alt=" Скриншот сайта  Крафтовый квас"></div>
+            <div>
+              <div><img src="../img/catalog/cards/browser.png" alt="browser Header"></div>
+              <div><img src="../img/catalog/cards/img-kvast-1.jpg" alt=" Скриншот сайта  Крафтовый квас"></div>
+            </div>
           </a>
           <div>
             <h3>Кваст</h3>
@@ -183,8 +201,6 @@
 
 
   <footer>
-    <!-- Will be added later -->
-
     <section>
       <h2>Контактная информация</h2>
       <p>Nёrds design studio</p>
@@ -194,11 +210,13 @@
       <p> тел. +7 (812) 275-75-75</p>
       <a href="#">Напишите нам</a>
       <div>
-        Map will be here
+        <img src="../img/footer/map-1.png" alt="Карта">
+        <div>
+          <img src="../img/footer/map-marker-1.png" alt="Маркер на карте">
+        </div>
       </div>
 
     </section>
-
 
     <section>
       <!-- H2 will be hidden -->
@@ -207,13 +225,19 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="#">
+            <span>Вконтакте</span>
+          </a>
         </li>
         <li>
-          <a href="#">Facebook</a>
+          <a href="#">
+            <span>Facebook</span>
+          </a>
         </li>
         <li>
-          <a href="#">Instagram</a>
+          <a href="#">
+            <span>Instagram</span>
+          </a>
         </li>
       </ul>
     </section>
