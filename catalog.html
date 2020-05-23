@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия Nёrds — Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/header/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн-студии Nёrds" />
+        <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds" />
       </a>
       <ul>
         <li>
@@ -27,7 +28,8 @@
         </li>
       </ul>
       <a href="#">
-        <img src="img/header/cart-icon.svg" width="15px" height="15px" alt="Корзина" />
+        <img src="img/header/cart-icon.svg" width="15" height="15" alt="" />
+        Корзина
       </a>
     </nav>
   </header>
@@ -35,13 +37,13 @@
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <h2>Фильтры</h2>
+      <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
           <input type="range" min="0" max="20000" step="500">
           <label for="filter-price-from">от</label>
-          <input type="number" id="filter-price-from" min="0" max="20000" step="500" >
+          <input type="number" id="filter-price-from" min="0" max="20000" step="500">
           <label for="filter-price-to">до</label>
           <input type="number" id="filter-price-to" min="0" max="20000" step="500">
         </fieldset>
@@ -96,7 +98,7 @@
     </section>
 
     <section>
-      <h2>Сортировка</h2>
+      <h2 class="visually-hidden">Сортировка</h2>
       <form class="" action="index.html" method="get">
         <fieldset>
           <legend>Сортировать:</legend>
@@ -104,10 +106,10 @@
           <button type="button" name="button-type" value="order-by-type">по типу</button>
           <button type="button" name="button-name" value="order-by-name">по названию</button>
           <button type="button" name="button-down-dir" value="order-down-dir">
-            <img src="img/catalog/filters/icon-down-dir.svg" width="11px" height="10px" alt="Сортировать по убыванию">
+            <img src="img/catalog/filters/icon-down-dir.svg" width="11" height="10" alt="">
           </button>
           <button type="button" name="button-up-dir" value="order-up-dir">
-            <img src="img/catalog/filters/icon-down-dir.svg" width="11px" height="10px" alt="Сортировать по убыванию">
+            <img src="img/catalog/filters/icon-down-dir.svg" width="11" height="10" alt="">
           </button>
         </fieldset>
       </form>
@@ -115,13 +117,13 @@
 
     <section>
       <!-- Will be hidden -->
-      <h2>Список готовых шаблонов</h2>
+      <h2 class="visually-hidden">Список готовых шаблонов</h2>
       <ul>
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-sedona-1.jpg" width="360px" height="580px" alt="Скриншот сайта Sedona"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-sedona-1.jpg" width="360" height="580" alt="Скриншот сайта Sedona"></div>
             </div>
           </a>
           <div>
@@ -135,8 +137,8 @@
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-pink-1.jpg" width="360px" height="580px" alt="Скриншот приложения Pink App"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-pink-1.jpg" width="360" height="580" alt="Скриншот приложения Pink App"></div>
             </div>
           </a>
           <div>
@@ -149,8 +151,8 @@
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-barbershop-1.jpg" width="360px" height="580px" alt="Скриншот сайта Borodinski"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-barbershop-1.jpg" width="360" height="580" alt="Скриншот сайта Borodinski"></div>
             </div>
           </a>
           <div>
@@ -163,8 +165,8 @@
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-mishka-1.jpg" width="360px" height="580px" alt="Скриншот сайта Mishka"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-mishka-1.jpg" width="360" height="580" alt="Скриншот сайта Mishka"></div>
             </div>
           </a>
           <div>
@@ -177,8 +179,8 @@
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-aplus-1.jpg" width="360px" height="580px" alt=" Скриншот сайта  Интересная учёба"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-aplus-1.jpg" width="360" height="580" alt=" Скриншот сайта  Интересная учёба"></div>
             </div>
           </a>
           <div>
@@ -191,8 +193,8 @@
         <li>
           <a href="#">
             <div>
-              <div><img src="img/catalog/cards/browser.png" width="360px" height="40px" alt="browser Header"></div>
-              <div><img src="img/catalog/cards/img-kvast-1.jpg" width="360px" height="580px" alt=" Скриншот сайта  Крафтовый квас"></div>
+              <div><img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера"></div>
+              <div><img src="img/catalog/cards/img-kvast-1.jpg" width="360" height="580" alt=" Скриншот сайта  Крафтовый квас"></div>
             </div>
           </a>
           <div>
@@ -208,7 +210,7 @@
           <a href="#">1</a>
         </li>
         <li>
-          <a>2</a>
+          <a href="#">2</a>
         </li>
         <li>
           <a href="#">3</a>
@@ -222,24 +224,44 @@
 
   <footer>
     <section>
-      <h2>Контактная информация</h2>
-      <p>Nёrds design studio</p>
-      <p>
-        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a href="#">Напишите нам</a>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <div>
-        <img src="img/footer/map-1.png" width="1440px" height="416px" alt="Карта" />
+        <p>Nёrds design studio</p>
+        <p>
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="#">Напишите нам</a>
+      </div>
+      <div>
+        <img src="img/footer/map-1.png" width="1440" height="416" alt="Карта" />
         <div>
-          <img src="img/footer/map-marker-1.png" width="231px" height="190px" alt="Маркер на карте" />
+          <img src="img/footer/map-marker-1.png" width="231" height="190" alt="Маркер на карте" />
         </div>
       </div>
     </section>
 
     <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="contact-us-name">Ваше имя</label>
+          <input id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        </div>
+        <div>
+          <label for="contact-us-email">Ваш email</label>
+          <input id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
+        </div>
+        <label for="contact-us-text">Текст письма:</label>
+        <textarea id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+        <button type="submit" name="send">Отправить</button>
+      </form>
+      <button type="submit">Закрыть</button>
+    </section>
+
+    <section>
       <!-- H2 will be hidden -->
-      <h2>Давайте дружить</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul>
