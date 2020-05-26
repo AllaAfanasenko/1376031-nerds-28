@@ -4,33 +4,39 @@
 <head>
   <meta charset="utf-8" />
   <title>Дизайн-студия Nёrds — Главная</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
+  <header class="header">
+    <nav class="main-navigation">
+      <a class="header-logo">
         <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds" />
       </a>
-      <ul>
-        <li>
-          <a href="#">Студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <a href="#">
-        <img src="img/header/cart-icon.svg" width="15" height="15" alt="" />
-        Корзина
-      </a>
+      <div>
+        <ul class="site-navigation">
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-cart">
+        <a href="#">
+          <img src="img/header/cart-icon.svg" width="15" height="15" alt="" />
+          Корзина
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -75,28 +81,28 @@
       </div>
     </section>
 
-    <section>
+    <section class="features">
       <h2 class="visually-hidden">Услуги</h2>
-      <ul>
-        <li>
+      <ul class="features-list">
+        <li class="feature-item">
           <img src="img/index/services/illustration-1-1.png" width="300" height="146" alt="Веб-сайты" />
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a href="#" class="button button-primary">Заказать</a>
         </li>
 
-        <li>
+        <li class="feature-item">
           <img src="img/index/services/illustration-2-1.png" width="300" height="146" alt="Приложения" />
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
+          <a href="#" class="button button-green">Заказать</a>
         </li>
 
-        <li>
+        <li class="feature-item">
           <img src="img/index/services/illustration-3-1.png" width="300" height="146" alt="Презентации" />
           <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+          <a href="#" class="button button-yellow">Заказать</a>
         </li>
       </ul>
     </section>
@@ -185,48 +191,52 @@
       </div>
     </section>
 
-    <section>
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="contact-us-name">Ваше имя</label>
-          <input id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
-        </div>
-        <div>
-          <label for="contact-us-email">Ваш email</label>
-          <input id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
-        </div>
-        <label for="contact-us-text">Текст письма:</label>
-        <textarea id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
-        <button type="submit" name="send">Отправить</button>
-      </form>
-      <button type="submit">Закрыть</button>
-    </section>
-
-    <section>
+    <section class="footer-social">
       <!-- H2 will be hidden -->
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-cta">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <p class="big-text">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+
       <ul>
         <li>
-          <a href="#">
+          <a href="#" class="social-button">
             <span>Вконтакте</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="social-button">
             <span>Facebook</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="social-button">
             <span>Instagram</span>
           </a>
         </li>
       </ul>
     </section>
   </footer>
+
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div>
+        <label for="contact-us-name">Ваше имя</label>
+        <input id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </div>
+      <div>
+        <label for="contact-us-email">Ваш email</label>
+        <input id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
+      </div>
+      <label for="contact-us-text">Текст письма:</label>
+      <textarea id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+      <button type="submit" name="send">Отправить</button>
+    </form>
+    <button type="submit">Закрыть</button>
+  </section>
+
 </body>
 
 </html>
