@@ -41,8 +41,52 @@ img {
   overflow: hidden;
 }
 
+/* header */
+.header {
+  background-color: var(--primary-gray);
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+  color: var(--primary-black);
+  line-height: 30px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.menu__list-link:hover {
+  color: var(--primary-red);
+}
+
+.menu__list-link:active {
+  color: var(--primary-black);
+  opacity: .3;
+}
+
+
+.cart__link {
+  text-transform: uppercase;
+  color: var(--primary-black);
+  line-height: 30px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.cart__link:hover {
+  color: var(--primary-red);
+}
+
+.cart__link:active {
+  color: var(--primary-black);
+  opacity: .3;
+}
+
 /*Button*/
-.button {
+/* .button {
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -73,8 +117,8 @@ img {
 .button-green{
   color: var(--primary-white);
   background-color: #00CA74;
-}
-
+} */
+/*
 .button-green:hover {
   background-color: #00BC6C;
 }
@@ -99,7 +143,7 @@ img {
 }
 
 /* Main navigation */
-.header {
+/* .header {
   background-color: var(--primary-gray);
 }
 
@@ -108,9 +152,8 @@ img {
   color: var(--primary-black);
   line-height: 30px;
   list-style: none;
-}
-
-.header-logo {}
+} */
+/* .header-logo {}
 
 .site-navigation {
   list-style: none;
@@ -126,9 +169,8 @@ img {
 .site-navigation a:hover,
 .header-cart a:hover {
   color: var(--primary-red);
-}
-
-.site-navigation a:active,
+} */
+/* .site-navigation a:active,
 .header-cart a:active {
   color: var(--primary-black);
   opacity: .3;
@@ -140,7 +182,7 @@ border-bottom: 2px solid var(--primary-red);
 }
 
 /* Features */
-.features-list {
+/* .features-list {
   list-style: none;
 }
 
@@ -148,12 +190,9 @@ border-bottom: 2px solid var(--primary-red);
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-
+} */
 /*footer*/
-
-.footer-social ul {
+/* .footer-social ul {
   list-style: none;
 }
 
@@ -169,9 +208,8 @@ border-bottom: 2px solid var(--primary-red);
 
 .social-button:hover {
   background-color: var(--hover-red);
-}
-
-.social-button:active {
+/* } */
+/* .social-button:active {
    color: rgba(255,255,255,0.3);
    background-color: var(--active-red);
-}
+}  */

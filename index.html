@@ -11,33 +11,35 @@
 
 <body>
   <header class="header">
-    <nav class="main-navigation">
-      <a class="header-logo">
-        <img src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds" />
+    <div class="logo">
+      <a class="logo__link" href="#">
+        <img class="logo__link-img" src="img/header/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrds" />
       </a>
-      <div>
-        <ul class="site-navigation">
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-cart">
-        <a href="#">
-          <img src="img/header/cart-icon.svg" width="15" height="15" alt="" />
-          Корзина
-        </a>
-      </div>
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#">Студия</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#">Клиенты</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="catalog.html">Магазин</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#">Контакты</a>
+        </li>
+      </ul>
     </nav>
+
+    <div class="cart">
+      <a class="cart__link" href="#">
+        <img class="cart__link-img" src="img/header/cart-icon.svg" width="15" height="15" alt="" />
+        Корзина
+      </a>
+    </div>
+
   </header>
 
   <main>
