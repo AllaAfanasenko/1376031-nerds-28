@@ -7,6 +7,9 @@
   --primary-gray: #EEEEEE;
   --hover-gray: #DFDFDF;
   --active-gray: #D5D5D5;
+  --active-link-gray: #A6A6A6;
+  --input-gray: 77, 77, 77;
+  --filter-text-gray:40,49,54;
 }
 
 body {
@@ -64,6 +67,22 @@ img {
   background-color: var(--active-red);
 }
 
+.secondary-button{
+  color: rgba(var(--primary-black), 1);
+  background-color: var(--primary-gray);
+}
+
+.secondary-button:hover{
+  color: rgba(var(--primary-black), 1);
+  background-color: var(--hover-gray);
+}
+
+.secondary-button:active{
+  color: rgba(var(--primary-black), 0.3);
+  background-color: var(--active-gray);
+}
+
+
 .green-button {
   color: rgba(var(--primary-white), 1);
   background-color: #00CA74;
@@ -97,6 +116,18 @@ img {
   background-color: var(--primary-gray);
 }
 
+.logo__link {
+  fill: rgba(var(--primary-black), 1);
+}
+
+.logo__link:hover {
+  fill: rgba(var(--primary-black), 1);
+}
+
+.logo__link:active {
+  fill: var(--active-link-gray);
+}
+
 .menu__list {
   list-style: none;
 }
@@ -116,10 +147,6 @@ img {
   color: rgba(var(--primary-black), 0.3);
 }
 
-/* .menu__list-link_active{
-  border-bottom: 2px solid var(--primary-red);
-
-} */
 .cart__link {
   text-transform: uppercase;
   color: var(--primary-black);
@@ -135,16 +162,7 @@ img {
   color: rgba(var(--primary-black), 0.3);
 }
 
-/* Services */
-.services-list {
-  list-style: none;
-}
 
-.services-list__item-header {
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
 
 /* Footer */
 .socials-list {
@@ -173,4 +191,45 @@ img {
 .socials-list__item-link:active {
   color: rgba(var(--primary-white), 0.3);
   background-color: var(--active-red);
+}
+
+
+/* page-header */
+.page-title-layout {
+  background-color: var(--primary-gray);
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* Services */
+.services-list {
+  list-style: none;
+}
+
+.services-list__item-header {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Filters */
+.filter-title{
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.filter__list{
+  list-style: none;
+}
+
+.filter__list-label{
+  color: rgba(var(--filter-text-gray), 1);
+}
+
+.filter__list-input:hover + .filter__list-label{
+  /* color: rgba(var(--filter-text-gray), 1); */
+  color: red;
 }
