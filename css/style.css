@@ -270,5 +270,5 @@ img {
 }
 
 .filter__input:hover + .filter__label{
-  color: rgba(var(--filter-text-gray), 1));
+  color: rgba(var(--filter-text-gray), 1);
 }
