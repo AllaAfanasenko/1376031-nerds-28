@@ -224,6 +224,7 @@ img {
 
 /* Footer */
 .socials {
+  margin-top: 68px;
   display: flex;
   flex-direction: row;
 }
@@ -243,8 +244,8 @@ img {
 }
 
 .footer-cta__text--big {
-    font-size: 36px;
-    margin: 0;
+  font-size: 36px;
+  margin: 0;
   line-height: 36px;
 }
 
@@ -262,17 +263,35 @@ img {
   background-color: var(--active-red);
 }
 
+/* catalog page */
+.catalog-page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
 /* page-header */
 .page-title-layout {
+  grid-column: 1 / -1;
+  padding: 0;
+  margin: 0;
+  min-height: 235px;
   background-color: var(--primary-gray);
 }
 
 .page-title {
+  padding: 0;
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
 
 /* Services */
+.services {
+  margin-top: 80px;
+}
+
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -294,8 +313,34 @@ img {
 }
 
 /* Templates */
+.templates {
+  margin-top: 48px;
+  margin-left: 140px;
+  /* outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 255, 0.7); */
+}
+
 .templates__list {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  grid-gap: 40px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.templates__image-browser {
+  width: 360px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.templates__image-case {
+  width: 360px;
+  height: 580px;
+  padding: 0;
+  margin: 0;
 }
 
 .templates__info {
@@ -309,6 +354,10 @@ img {
   transition: .2s;
 }
 
+.templates__text{
+  width: 255px;
+}
+
 .templates__title:hover {
   color: var(--primary-red);
 }
@@ -318,12 +367,38 @@ img {
 }
 
 /* Filters */
+.filters {
+  width: 260px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px; */
+}
+
+
+.filter__filter-price{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter__filter-fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  border: none;
+}
+
 .filter__filter-title {
   text-transform: uppercase;
   line-height: 30px;
 }
 
 .filter__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -334,3 +409,9 @@ img {
 .filter__input:hover+.filter__label {
   color: rgba(var(--filter-text-gray), 1);
 }
+
+/* sorting */
+/* .sorting {
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 255, 0, 0.7);
+} */
