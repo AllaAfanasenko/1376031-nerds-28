@@ -82,16 +82,16 @@ img {
   background-color: var(--active-gray);
 }
 
-.templates__list-item-button {
+.templates__button {
   color: rgba(var(--primary-white), 1);
   background-color: var(--primary-red);
 }
 
-.templates__list-item-button:hover {
+.templates__button:hover {
   background-color: var(--hover-red);
 }
 
-.templates__list-item-button:active {
+.templates__button:active {
   color: rgba(var(--primary-white), 1);
   background-color: var(--active-red);
 }
@@ -146,18 +146,18 @@ img {
   list-style: none;
 }
 
-.menu__list-link {
+.menu__link {
   text-transform: uppercase;
   color: var(--primary-black);
   line-height: 30px;
   transition: .2s;
 }
 
-.menu__list-link:hover {
+.menu__link:hover {
   color: var(--primary-red);
 }
 
-.menu__list-link:active {
+.menu__link:active {
   color: rgba(var(--primary-black), 0.3);
 }
 
@@ -183,7 +183,7 @@ img {
   list-style: none;
 }
 
-.footer-cta__big-text {
+.footer-cta__text--big {
   font-size: 36px;
   line-height: 36px;
 }
@@ -193,16 +193,16 @@ img {
   line-height: 36px;
 }
 
-.socials-list__item-link {
+.socials-list__link {
   color: rgba(var(--primary-white), 1);
   background-color: var(--primary-gray);
 }
 
-.socials-list__item-link:hover {
+.socials-list__link:hover {
   background-color: var(--hover-red);
 }
 
-.socials-list__item-link:active {
+.socials-list__link:active {
   color: rgba(var(--primary-white), 0.3);
   background-color: var(--active-red);
 }
@@ -223,7 +223,7 @@ img {
   list-style: none;
 }
 
-.services-list__item-header {
+.services-list__header {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
@@ -235,28 +235,28 @@ img {
   list-style: none;
 }
 
-.templates__list-item-info{
+.templates__info{
   background-color: var(--primary-gray);
 }
 
-.templates__list-item-title{
+.templates__title{
   text-transform: uppercase;
   color: var(--primary-black);
   line-height: 30px;
   transition: .2s;
 }
 
-.templates__list-item-title:hover {
+.templates__title:hover {
   color: var(--primary-red);
 }
 
-.templates__list-item-title:active {
+.templates__title:active {
   color: rgba(var(--primary-black), 0.3);
 }
 
 
 /* Filters */
-.filter-title{
+.filter__filter-title{
   text-transform: uppercase;
   line-height: 30px;
 }
@@ -265,10 +265,10 @@ img {
   list-style: none;
 }
 
-.filter__list-label{
+.filter__label{
   color: rgba(var(--filter-text-gray), 1);
 }
 
-.filter__list-input:hover + .filter__list-label{
-  color: rgba(var(--filter-text-gray), 1);
+.filter__input:hover + .filter__label{
+  color: rgba(var(--filter-text-gray), 1));
 }
