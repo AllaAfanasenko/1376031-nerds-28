@@ -55,13 +55,29 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="filter__filter-price">
+        <fieldset class="filter__filter-fieldset">
           <legend class="filter__filter-title">Стоимость</legend>
-          <input type="range" min="0" max="20000" step="500">
-          <label for="filter-price-from">от</label>
-          <input type="number" id="filter-price-from" min="0" max="20000" step="500">
-          <label for="filter-price-to">до</label>
-          <input type="number" id="filter-price-to" min="0" max="20000" step="500">
+
+          <div class="filter__range-filter">
+            <div class="filter__range-controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
+              <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__min-price-label">
+                от <input class="filter__price-input" type="number" name="min-price" value="0" step="500">
+              </label>
+              <label class="filter__max-pric-label">
+                до <input class="filter__price-input" type="number" name="max-price" value="15000" step="500">
+              </label>
+            </div>
+          </div>
+
+
+
         </fieldset>
 
         <fieldset class="filter__filter-fieldset">
