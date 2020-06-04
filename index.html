@@ -52,60 +52,62 @@
 
     <section class="carousel">
       <h2 class="visually-hidden">Карусель</h2>
-      <div class="carousel-slides center-container">
-        <div class="carousel__slide">
+
+      <ul class="carousel-slides center-container">
+        <li class="carousel__slide">
           <h3 class="visually-hidden">Первый слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Долго, дорого, скрупулезно.</p>
             <p class="carousel__textarea">
-              Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              Математически выверенный дизайн <br>
+              для вашего сайта или мобильного приложения.
             </p>
-            <a href="#">Узнать больше</a>
+            <a href="#" class="button slide-button">Узнать больше</a>
           </div>
           <div class="carousel__slide-image">
             <img src="img/index/carousel/nerds-index-slide1-1.png" width="760" height="431" alt="Картинка в карусели" />
           </div>
-        </div>
+        </li>
 
-        <div class="carousel__slide">
+        <li class="carousel__slide hidden-slide">
           <h3 class="visually-hidden">Второй слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Любим математику <br>
               как никто другой</p>
             <p class="carousel__textarea">
-              Никакого креатива, только математические формулы для расчета идеальных пропорций
+              Никакого креатива, только математические формулы <br>
+              для расчета идеальных пропорций
             </p>
-            <a href="#">Узнать больше</a>
+            <a class="button slide-button" href="#">Узнать больше</a>
           </div>
           <div class="carousel__slide-image">
             <img src="img/index/carousel/nerds-index-slide2-1.png" width="760" height="431" alt="Картинка в карусели" />
           </div>
+        </li>
 
-        </div>
-
-        <div class="carousel__slide">
+        <li class="carousel__slide hidden-slide">
           <h3 class="visually-hidden">Третий слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Только ночь,<br>
               только хардкор</p>
             <p class="carousel__textarea">
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+              Работать днем, как все? Мы против этого. <br>
+              Ближе к полуночи работа только начинается.
             </p>
-            <a href="#">Узнать больше</a>
+            <a class="button slide-button" href="#">Узнать больше</a>
           </div>
           <div class="carousel__slide-image">
             <img src="img/index/carousel/nerds-index-slide3-1.png" width="760" height="431" alt="Картинка в карусели" />
           </div>
+        </li>
+      </ul>
 
-        </div>
+      <div class="carousel__slides-controls">
+        <button class="carousel__button" type="button" aria-label="Первый слайд"></button>
+        <button class="carousel__button" type="button" aria-label="Второй слайд"></button>
+        <button class="carousel__button" type="button" aria-label="Третий слайд"></button>
       </div>
 
-      <!-- The dots/circles -->
-      <div>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </section>
 
     <section class="services center-container">
@@ -161,44 +163,44 @@
           <img src="img/index/about/nerds-illustration-1.png" width="360" height="208" alt="Логотип дизайн-студии Nёrds" />
         </div>
         <p class="advantages__tagline">С 2004 года любим точность во всём:</p>
-<div class="advantages__statistics">
-  <div>
-    <p class="advantages__number">146<sup>%</sup></p>
-    <p class="advantages__kpi">Уровень самоотдачи</p>
-  </div>
-  <div>
-    <p class="advantages__number">100<sup>%</sup></p>
-    <p class="advantages__kpi">Соблюдение сроков</p>
-  </div>
-  <div>
-    <p class="advantages__number">50<sup>%</sup></p>
-    <p class="advantages__kpi">Минимальная предоплата</p>
-  </div>
-</div>
+        <div class="advantages__statistics">
+          <div>
+            <p class="advantages__number">146<sup>%</sup></p>
+            <p class="advantages__kpi">Уровень самоотдачи</p>
+          </div>
+          <div>
+            <p class="advantages__number">100<sup>%</sup></p>
+            <p class="advantages__kpi">Соблюдение сроков</p>
+          </div>
+          <div>
+            <p class="advantages__number">50<sup>%</sup></p>
+            <p class="advantages__kpi">Минимальная предоплата</p>
+          </div>
+        </div>
 
       </section>
     </section>
 
 
-    <section class="center-container">
+    <section class="partners center-container">
       <h2 class="visually-hidden">Партнёры</h2>
-      <ul>
-        <li>
+      <ul class="partners__list">
+        <li class="partner__item partner__item-right-border">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/index/partners/logo-1-1.png" width="199" height="68" alt="Логотип HTML Academy" />
           </a>
         </li>
-        <li>
+        <li class="partner__item partner__item-right-border">
           <a href="#">
             <img src="img/index/partners/logo-2-2.png" width="209" height="90" alt="Логотип барбершопа Borodinski" />
           </a>
         </li>
-        <li>
+        <li class="partner__item partner__item-right-border">
           <a href="#">
             <img src="img/index/partners/logo-3-2.png" width="185" height="52" alt="Логотип приложения Pink" />
           </a>
         </li>
-        <li>
+        <li class="partner__item">
           <a href="#"><img src="img/index/partners/logo-4-2.png" width="173" height="84" alt="Логотип Сайта вещей для дома Mishka" /></a>
         </li>
       </ul>
@@ -209,20 +211,21 @@
   <footer class="footer">
     <section class="map">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div>
+      <div class="footer__map">
         <div>
           <img class="map__map-image" src="img/footer/map-1.png" alt="Карта" />
         </div>
 
-        <div>
-          <p>Nёrds design studio</p>
-          <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <div class="footer__address">
+          <p class="footer__studio-name">Nёrds design studio</p>
+          <p class="footer__full-address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+            <br>
+            тел. +7 (812) 275-75-75
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#">Напишите нам</a>
+          <a class="button contact-us-button" href="#">Напишите нам</a>
         </div>
-        <div>
+        <div class="footer__map-marker">
           <img src="img/footer/map-marker-1.png" width="231" height="190" alt="Маркер на карте" />
         </div>
       </div>
@@ -238,7 +241,7 @@
 
       <ul class="socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
+          <a class="socials-list__link" href="#" target="_blank">
             <svg width="27" height="15" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" />
