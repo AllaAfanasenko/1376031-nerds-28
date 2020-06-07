@@ -76,26 +76,32 @@
                 </label>
               </div>
             </div>
-
-
-
           </fieldset>
 
           <fieldset class="filter__filter-fieldset">
             <legend class="filter__filter-title">Сетка</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <input class="filter__input" type="radio" name="filter-grid" value="adaptive-grid" id="filter-adaptive-grid" checked>
-                <label class="filter__label" for="filter-adaptive-grid">Адаптивная</label>
+                <label class="filter__check">
+                  <input class="filter__input" type="radio" name="filter-grid" value="adaptive-grid" checked>
+                  <span class="filter__radio-button"></span>
+                  Адаптивная
+                </label>
               </li>
 
-              <li>
-                <input class="filter__input" type="radio" name="filter-grid" value="fixed-grid" id="filter-fixed-grid">
-                <label class="filter__label" for="filter-fixed-grid">Фиксированная</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                  <input class="filter__input" type="radio" name="filter-grid" value="fixed-grid">
+                  <span  class="filter__radio-button"></span>
+                  Фиксированная
+                </label>
               </li>
-              <li>
-                <input class="filter__input" type="radio" name="filter-grid" value="flex-grid" id="filter-flex-grid">
-                <label class="filter__label" for="filter-flex-grid">Резиновая</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                  <input class="filter__input" type="radio" name="filter-grid" value="flex-grid">
+                  <span class="filter__radio-button"></span>
+                  Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -103,25 +109,40 @@
           <fieldset class="filter__filter-fieldset">
             <legend class="filter__filter-title">Особенности:</legend>
             <ul class="filter__list">
-              <li>
-                <input class="filter__input" type="checkbox" name="slider" id="feature-slider" checked>
-                <label class="filter__label" for="feature-slider">Слайдер</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                    <input class="filter__input" type="checkbox" name="slider" checked>
+                    <span class="filter__checkbox"></span>
+                    Слайдер
+                </label>
               </li>
-              <li>
-                <input class="filter__input" type="checkbox" name="advantages-section" id="feature-advantages">
-                <label class="filter__label" for="feature-advantages">Блок преимуществ</label>
+              <li class="filter__item">
+                <label class=" filter__check">
+                  <input class="filter__input" type="checkbox" name="advantages-section">
+                  <span class="filter__checkbox"></span>
+                  Блок преимуществ
+                </label>
               </li>
-              <li>
-                <input class="filter__input" type="checkbox" name="news" id="feature-news" checked>
-                <label class="filter__label" for="feature-news">Новости</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                  <input class="filter__input" type="checkbox" name="news" checked>
+                  <span class="filter__checkbox"></span>
+                  Новости
+                </label>
               </li>
-              <li>
-                <input class="filter__input" type="checkbox" name="galery" id="feature-galery">
-                <label class="filter__label" for="feature-galery">Галерея</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                  <input class="filter__input" type="checkbox" name="galery">
+                  <span class="filter__checkbox"></span>
+                  Галерея
+                </label>
               </li>
-              <li>
-                <input class="filter__input" type="checkbox" name="rubbish-bin" id="feature-rubbish-bin">
-                <label class="filter__label" for="feature-rubbish-bin">Корзина</label>
+              <li class="filter__item">
+                <label class="filter__check">
+                  <input class="filter__input" type="checkbox" name="rubbish-bin">
+                  <span class="filter__checkbox"></span>
+                  Корзина
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -139,7 +160,6 @@
             <button class="button transparent__button sorting__button" type="button" name="button-price" value="order-by-price">по цене</button>
             <button class="button transparent__button sorting__button" type="button" name="button-type" value="order-by-type">по типу</button>
             <button class="button transparent__button sorting__button" type="button" name="button-name" value="order-by-name">по названию</button>
-            <div class="">
               <button class="button transparent__button sorting__button-down-dir" type="button" name="button-down-dir" value="order-down-dir">
                 <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0h11" /></svg>
@@ -148,8 +168,6 @@
                 <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10h11L5.5 0z" /></svg>
               </button>
-            </div>
-
           </div>
         </div>
 
