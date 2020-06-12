@@ -26,7 +26,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">Студия</a>
+            <a class="menu__link" href="index.html">Студия</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Клиенты</a>
@@ -282,7 +282,7 @@
 
         <ul class="pagination">
           <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
+            <a class="pagination__link-current" href="#">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -290,8 +290,9 @@
           <li class="pagination__item">
             <a class="pagination__link" href="#">3</a>
           </li>
+
           <li class="pagination__item">
-            <a class="pagination__link" href="#">Следующая</a>
+            <a class="pagination__link pagination__link-next" href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -310,7 +311,7 @@
         <div class="footer__address">
           <p class="footer__studio-name">Nёrds design studio</p>
           <p class="footer__full-address">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+            191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
             <br>
             тел. +7 (812) 275-75-75
           </p>
@@ -361,24 +362,27 @@
     </section>
   </footer>
 
+  <section class="modal-contact-us visually-hidden">
+    <h2 class="modal-contact-us__title">Напишите нам</h2>
+    <form class="modal-contact-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-contact-us__name">
+        <label class="modal-contact-us__label" for="contact-us-name">Ваше имя</label>
+        <input class="modal-contact-us__name-input" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="modal-contact-us__email">
+        <label class="modal-contact-us__label" for="contact-us-email">Ваш email</label>
+        <input class="modal-contact-us__email-input" id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
+      </div>
+      <div class="modal-contact-us__text">
+        <label class="modal-contact-us__label" for="contact-us-text">Текст письма:</label>
+        <textarea class="modal-contact-us__textarea" id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+      </div>
 
-  <section>
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <div>
-        <label for="contact-us-name">Ваше имя</label>
-        <input id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
-      </div>
-      <div>
-        <label for="contact-us-email">Ваш email</label>
-        <input id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
-      </div>
-      <label for="contact-us-text">Текст письма:</label>
-      <textarea id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
-      <button type="submit" name="send">Отправить</button>
+      <button class="button modal-contact-us__button" type="submit" name="send">Отправить</button>
     </form>
-    <button type="submit">Закрыть</button>
+    <button class="modal-contact-us__close" type="submit" aria-label="Закрыть"></button>
   </section>
+
 </body>
 
 </html>

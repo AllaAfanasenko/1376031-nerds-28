@@ -361,14 +361,16 @@ img {
 }
 
 .menu__item {
-  padding-right: 45px;
+  padding-right: 44px;
 }
+
 
 .menu__link {
   text-transform: uppercase;
   color: var(--primary-black);
-  line-height: 30px;
   transition: .2s;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .menu__link:hover {
@@ -628,20 +630,38 @@ img {
   color: rgba(var(--filter-text-gray), 1);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .about-studio__list {
   color: rgba(var(--filter-text-gray), 1);
   list-style: none;
-  line-height: 48px;
-  padding-left: 36px;
   margin: 0;
+  padding: 0;
 }
 
-.about-studio__list-item {
+/* .about-studio__list-item {
   list-style-image: url("../img/index/about/list-image.png");
+} */
+
+.about-studio__list-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 37px;
+  margin-bottom: 30px;
 }
+
+.about-studio__list-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--primary-red);
+}
+
 
 /* advantages */
 .advantages {
@@ -943,7 +963,8 @@ img {
   background-image: url(../img/catalog/filters/checkbox-off.svg);
 }
 
-.filter__input:hover+.filter__checkbox {
+.filter__input:hover+.filter__checkbox,
+ .filter__input:focus+.filter__checkbox{
   background-image: url(../img/catalog/filters/checkbox-off-focus.svg);
 }
 
@@ -953,7 +974,9 @@ img {
   width: 25px;
 }
 
-.filter__input:checked:hover+.filter__checkbox {
+.filter__input:checked:hover+.filter__checkbox,
+ .filter__input:checked:focus+.filter__checkbox
+ {
   color: rgba(var(--filter-text-gray), 1);
   background-image: url(../img/catalog/filters/checkbox-on-focus.svg);
 }
@@ -971,7 +994,9 @@ img {
   background-image: url(../img/catalog/filters/checkbox-on-disabled.svg);
 }
 
-.filter__input:disabled:checked:hover+.filter__checkbox {
+.filter__input:disabled:checked:hover+.filter__checkbox,
+.filter__input:disabled:checked:focus+.filter__checkbox
+ {
   background-image: url(../img/catalog/filters/checkbox-on-disabled.svg);
 }
 
@@ -993,7 +1018,9 @@ img {
   background-image: url(../img/catalog/filters/radio-on.svg);
 }
 
-.filter__input:checked:hover+.filter__radio-button {
+.filter__input:checked:hover+.filter__radio-button,
+.filter__input:checked:focus+.filter__radio-button
+ {
   color: rgba(var(--filter-text-gray), 1);
   background-image: url(../img/catalog/filters/radio-on-focus.svg);
 }
@@ -1003,7 +1030,9 @@ img {
   background-image: url(../img/catalog/filters/radio-off-disabled.svg);
 }
 
-.filter__input:disabled:hover+.filter__radio-button {
+.filter__input:disabled:hover+.filter__radio-button,
+.filter__input:disabled:focus+.filter__radio-button
+ {
   background-image: url(../img/catalog/filters/radio-off-disabled.svg);
 }
 
@@ -1011,7 +1040,9 @@ img {
   background-image: url(../img/catalog/filters/radio-on-disabled.svg);
 }
 
-.filter__input:disabled:checked:hover+.filter__radio-button {
+.filter__input:disabled:checked:hover+.filter__radio-button,
+.filter__input:disabled:checked:focus+.filter__radio-button
+ {
   background-image: url(../img/catalog/filters/radio-on-disabled.svg);
 }
 
@@ -1118,12 +1149,18 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
-  margin-top: 25px;
+  margin-top: 14px;
 }
 
 .pagination__item {
-  margin-right: 11px;
+  margin-right: 12px;
+  margin-top: 11px;
 }
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
 
 .pagination__link {
   display: block;
@@ -1136,11 +1173,12 @@ img {
   border-radius: 3px;
 }
 
-.pagination__item:last-child {
-  /* padding-left: 57px;
-  padding-right: 57px; */
+
+.pagination__link-next {
+  padding: 13px 77px;
   margin-right: 0;
 }
+
 
 .pagination__link:hover {
   background-color: #DFDFDF;
@@ -1149,6 +1187,19 @@ img {
 .pagination__link:active {
   color: rgba(var(--primary-black), 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination__link-current {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 13px 20px;
+  margin: 0;
+  color: rgba(var(--primary-black), 1);
+  background-color: rgba(var(--primary-white), 1);
+  outline: #DBDBDB 3px solid;
+  outline-offset: -3px;
+  border-radius: 3px;
 }
 
 /* =================================================================================================== */
