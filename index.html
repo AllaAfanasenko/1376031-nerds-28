@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js">
+  </script>
 </head>
 
 <body class="page-body">
@@ -104,11 +106,11 @@
       </ul>
 
 
-<form class="carousel__slides-controls" action="https://echo.htmlacademy.ru" method="get">
-  <input class="carousel__button" type="radio" name="carousel__button" value="fist-slide" aria-label="Первый слайд" checked>
-  <input class="carousel__button" type="radio" name="carousel__button" value="second-slide" aria-label="Второй слайд">
-  <input class="carousel__button" type="radio" name="carousel__button" value="third-slide" aria-label="Третий слайд">
-</form>
+      <form class="carousel__slides-controls" action="https://echo.htmlacademy.ru" method="get">
+        <input class="carousel__button" type="radio" name="carousel__button" value="fist-slide" aria-label="Первый слайд" checked>
+        <input class="carousel__button" type="radio" name="carousel__button" value="second-slide" aria-label="Второй слайд">
+        <input class="carousel__button" type="radio" name="carousel__button" value="third-slide" aria-label="Третий слайд">
+      </form>
 
     </section>
 
@@ -190,7 +192,7 @@
       <ul class="partners__list">
         <li class="partner__item">
           <a class="partner__link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/index/partners/logo-1-1.png" width="199" height="68" alt="Логотип HTML Academy" />
+            <img src="img/index/partners/logo-1-1.png" width="199" height="68" alt="Логотип HTML Academy" />
           </a>
         </li>
         <li class="partner__item">
@@ -214,28 +216,21 @@
   <footer class="footer">
     <section class="map">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="footer__map">
-        <div>
-          <img class="map__map-image" src="img/footer/map-1.png" alt="Карта" />
-        </div>
-
-        <div class="footer__address">
-          <p class="footer__studio-name">Nёrds design studio</p>
-          <p class="footer__full-address">
-            191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
-            <br>
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="button contact-us-button" href="#">Напишите нам</a>
-        </div>
-        <!-- <div class="footer__map-marker">
-          <img src="img/footer/map-marker-1.png" width="231" height="190" alt="Маркер на карте" />
-        </div>
-      </div> -->
+      <div>
+        <img class="map__map-image" src="img/footer/map-1.png" alt="Карта" />
+      </div>
+      <div class="footer__address">
+        <p class="footer__studio-name">Nёrds design studio</p>
+        <p class="footer__full-address">
+          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
+          <br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="button contact-us-button" href="contact-us.html">Напишите нам</a>
+      </div>
     </section>
 
     <section class="socials center-container">
-      <!-- H2 will be hidden -->
       <div class="socials__footer-cta">
         <h2 class="visually-hidden">Социальные сети</h2>
         <p class="footer-cta__text--middle">Давайте дружить, это выгодно!</p>
@@ -273,20 +268,20 @@
     </section>
   </footer>
 
-  <section class="modal-contact-us visually-hidden">
+  <section class="modal modal-contact-us">
     <h2 class="modal-contact-us__title">Напишите нам</h2>
     <form class="modal-contact-us__form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-contact-us__name">
         <label class="modal-contact-us__label" for="contact-us-name">Ваше имя</label>
-        <input class="modal-contact-us__name-input" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        <input class="modal-contact-us__name-input" id="contact-us-name" type="text" name="name" placeholder="Имя Фамилия">
       </div>
       <div class="modal-contact-us__email">
         <label class="modal-contact-us__label" for="contact-us-email">Ваш email</label>
-        <input class="modal-contact-us__email-input" id="contact-us-email" type="email" name="email" placeholder="email@example.com" required>
+        <input class="modal-contact-us__email-input" id="contact-us-email" type="email" name="email" placeholder="email@example.com">
       </div>
       <div class="modal-contact-us__text">
         <label class="modal-contact-us__label" for="contact-us-text">Текст письма:</label>
-        <textarea class="modal-contact-us__textarea" id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме" required></textarea>
+        <textarea class="modal-contact-us__textarea" id="contact-us-text" name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
       </div>
 
       <button class="button modal-contact-us__button" type="submit" name="send">Отправить</button>
@@ -294,6 +289,8 @@
     <button class="modal-contact-us__close" type="submit" aria-label="Закрыть"></button>
   </section>
 
+
+  <script src="js/script.js"></script>
 
 </body>
 
