@@ -134,11 +134,11 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
+  left: -1px;
   width: 27px;
   height: 4px;
   border-radius: 3px;
-  background-color: #FECCCE;
+  background-color: #FECDCE;
 }
 
 .modal-contact-us__close::before {
@@ -147,6 +147,16 @@ img {
 
 .modal-contact-us__close::after {
   transform: rotate(-45deg);
+}
+
+.modal-contact-us__close:hover::before,
+.modal-contact-us__close:hover::after {
+  background-color: var(--primary-red);
+}
+
+.modal-contact-us__close:active::before,
+.modal-contact-us__close:active::after {
+  background-color: #FFEFEF;
 }
 
 /* slide-button */
