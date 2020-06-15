@@ -27,12 +27,10 @@ buttonContactUs.addEventListener("click", function(evt) {
     if (storageEmail) {
       modalContactUsEmailInput.value = storageEmail;
       modalContactUsTextarea.focus();
-    }
-    else {
+    } else {
       modalContactUsEmailInput.focus();
     }
-  }
-  else {
+  } else {
     modalContactUsNameInput.focus();
   }
 });
