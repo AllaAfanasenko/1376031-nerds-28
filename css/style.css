@@ -184,7 +184,7 @@ img {
   background-color: var(--primary-red);
   border-radius: 3px;
   min-width: 80px;
-  padding: 12px 44px;
+  padding: 13px 44px;
 }
 
 .contact-us-button:hover {
@@ -442,27 +442,26 @@ img {
   width: 319px;
   min-height: 308px;
   background-color: rgba(var(--primary-white), 1);
-  padding: 50px 50px;
+  padding-top: 53px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 47px;
 }
 
 .footer__studio-name {
   font-weight: bold;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .footer__full-address {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
-/* .footer__map-marker {
-  position: absolute;
-  left: 822px;
-  top: 86px;
-} */
 /* social networks */
 .socials {
   margin-top: 68px;
@@ -616,8 +615,8 @@ img {
 /* about studio */
 .about-studio {
   width: 651px;
-  margin-top: 73px;
-  margin-bottom: 60px;
+  margin-top: 75px;
+  margin-bottom: 52px;
 }
 
 .about-studio__title--big {
@@ -638,7 +637,7 @@ img {
   color: rgba(var(--filter-text-gray), 1);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .about-studio__list {
@@ -648,15 +647,13 @@ img {
   padding: 0;
 }
 
-/* .about-studio__list-item {
-  list-style-image: url("../img/index/about/list-image.png");
-} */
 .about-studio__list-item {
   position: relative;
   margin: 0;
   padding: 0;
   padding-left: 37px;
-  margin-bottom: 30px;
+  line-height: 23px;
+  margin-bottom: 25px;
 }
 
 .about-studio__list-item::before {
@@ -679,7 +676,7 @@ img {
 }
 
 .advantages__image {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .advantages__tagline {
@@ -688,12 +685,13 @@ img {
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
+  margin-left: 16px;
 }
 
 .advantages__statistics {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 23px;
+  grid-gap: 11px;
 }
 
 .advantages__number {
@@ -711,6 +709,8 @@ img {
 
 .advantages__kpi {
   color: rgba(var(--filter-text-gray), 1);
+  margin-top: 13px;
+  line-height: 18px;
 }
 
 /* partners ===================================================================================================*/
@@ -723,7 +723,7 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 37px;
   padding-left: 32px;
   padding-right: 43px;
   display: flex;
@@ -752,6 +752,20 @@ img {
   background-color: var(--primary-gray);
   transform: translateY(-50%);
 }
+
+.partner__html-academy {
+  margin-top: 7px;
+}
+
+.partner__borodinski {
+  margin-left: -23px;
+}
+
+.partner__pink {
+  margin-left: -8px;
+}
+
+.partner__mishka {}
 
 .partner__link {
   opacity: 20%;
