@@ -32,7 +32,7 @@
             <a class="menu__link" href="#">Клиенты</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Магазин</a>
+            <a class="menu__link menu__link-active" href="#">Магазин</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -56,8 +56,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter__filter-fieldset">
-            <legend class="filter__filter-title">Стоимость</legend>
+          <fieldset class="filter__filter-fieldset filter__filter-fieldse-price">
+            <legend class="filter__filter-title">Стоимость:</legend>
 
             <div class="filter__range-filter">
               <div class="filter__range-controls">
@@ -78,7 +78,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="filter__filter-fieldset">
+          <fieldset class="filter__filter-fieldset filter__filter-fieldset-grid">
             <legend class="filter__filter-title">Сетка</legend>
             <ul class="filter__list">
               <li class="filter__item">
@@ -92,7 +92,7 @@
               <li class="filter__item">
                 <label class="filter__check">
                   <input class="filter__input" type="radio" name="filter-grid" value="fixed-grid">
-                  <span  class="filter__radio-button"></span>
+                  <span class="filter__radio-button"></span>
                   Фиксированная
                 </label>
               </li>
@@ -106,14 +106,14 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter__filter-fieldset">
+          <fieldset class="filter__filter-fieldset filter__filter-fieldset-features">
             <legend class="filter__filter-title">Особенности:</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="filter__check">
-                    <input class="filter__input" type="checkbox" name="slider" checked>
-                    <span class="filter__checkbox"></span>
-                    Слайдер
+                  <input class="filter__input" type="checkbox" name="slider" checked>
+                  <span class="filter__checkbox"></span>
+                  Слайдер
                 </label>
               </li>
               <li class="filter__item">
@@ -157,9 +157,12 @@
         <div class="sorting__options">
           <p class="sorting__title">Сортировать:</p>
           <div class="sorting__criteria">
-            <button class="button transparent__button sorting__button" type="button" name="button-price" value="order-by-price">по цене</button>
-            <button class="button transparent__button sorting__button" type="button" name="button-type" value="order-by-type">по типу</button>
-            <button class="button transparent__button sorting__button" type="button" name="button-name" value="order-by-name">по названию</button>
+            <div class="sorting__types-of-sorting">
+              <button class="button transparent__button sorting__button" type="button" name="button-price" value="order-by-price">по цене</button>
+              <button class="button transparent__button sorting__button" type="button" name="button-type" value="order-by-type">по типу</button>
+              <button class="button transparent__button sorting__button" type="button" name="button-name" value="order-by-name">по названию</button>
+            </div>
+            <div class="sorting__direction">
               <button class="button transparent__button sorting__button-down-dir" type="button" name="button-down-dir" value="order-down-dir">
                 <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0h11" /></svg>
@@ -168,39 +171,38 @@
                 <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10h11L5.5 0z" /></svg>
               </button>
+            </div>
           </div>
         </div>
-
       </section>
 
       <section class="templates">
-        <!-- Will be hidden -->
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="templates__list">
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-sedona-1.jpg" width="360" height="580" alt="Скриншот сайта Sedona">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-sedona-1.jpg" width="360" height="580" alt="Скриншот сайта Sedona">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">Sedona</h3>
               </a>
-              <p class="templates__text">Информационный сайт для туристов</p>
+              <p class="templates__text">Информационный сайт <br> для туристов</p>
               <button class="button templates__button" type="button">9900 &#8381;</button>
             </div>
           </li>
 
 
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-pink-1.jpg" width="360" height="580" alt="Скриншот приложения Pink App">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-pink-1.jpg" width="360" height="580" alt="Скриншот приложения Pink App">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">Pink app</h3>
@@ -211,12 +213,12 @@
           </li>
 
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-barbershop-1.jpg" width="360" height="580" alt="Скриншот сайта Borodinski">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-barbershop-1.jpg" width="360" height="580" alt="Скриншот сайта Borodinski">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">Borodinski</h3>
@@ -227,12 +229,12 @@
           </li>
 
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-mishka-1.jpg" width="360" height="580" alt="Скриншот сайта Mishka">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-mishka-1.jpg" width="360" height="580" alt="Скриншот сайта Mishka">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">Mishka</h3>
@@ -243,12 +245,12 @@
           </li>
 
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-aplus-1.jpg" width="360" height="580" alt=" Скриншот сайта  Интересная учёба">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-aplus-1.jpg" width="360" height="580" alt=" Скриншот сайта  Интересная учёба">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">a Plus</h3>
@@ -259,12 +261,12 @@
           </li>
 
           <li class="templates__item">
-              <div class="templates__image-browser">
-                <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
-              </div>
-              <div class="templates__image-case">
-                <img src="img/catalog/cards/img-kvast-1.jpg" width="360" height="580" alt=" Скриншот сайта  Крафтовый квас">
-              </div>
+            <div class="templates__image-browser">
+              <img src="img/catalog/cards/browser.png" width="360" height="40" alt="Шапка браузера">
+            </div>
+            <div class="templates__image-case">
+              <img src="img/catalog/cards/img-kvast-1.jpg" width="360" height="580" alt=" Скриншот сайта  Крафтовый квас">
+            </div>
             <div class="templates__info">
               <a class="templates__title-link" href="#">
                 <h3 class="templates__title">Кваст</h3>
@@ -274,12 +276,9 @@
             </div>
           </li>
         </ul>
-        <!-- паггинация -->
-<div class="">
+        <div class="">
 
-</div>
-
-
+        </div>
         <ul class="pagination">
           <li class="pagination__item">
             <a class="pagination__link-current" href="#">1</a>
