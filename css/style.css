@@ -468,6 +468,17 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  margin-bottom: 10px;
+}
+
+.footer__tel{
+  margin-bottom: 40px;
+  color: #666666;
+}
+
+.footer__tel-number{
+  text-decoration: none;
+  color: #666666;
   margin-bottom: 40px;
 }
 
@@ -544,41 +555,59 @@ img {
 
 .carousel__slides-controls {
   position: absolute;
+  top: 317px;
+  left: 713px;
+  z-index: 20;
+  display: flex;
   width: 88px;
-  display: grid;
-  grid-gap: 17px;
-  grid-template-columns: repeat(3, 1fr);
-  bottom: 95px;
-  left: 50%;
-  margin-left: -44px;
-  z-index: 30;
+  justify-content: space-between;
 }
 
 .carousel__button {
+  padding: 0;
+  border: 0px;
   width: 18px;
   height: 18px;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  background-image: url(../img/index/carousel/radio-button-unchecked.svg);
-  cursor: pointer;
+  background-color: rgba(var(--primary-white),1);
+  border-radius: 50%;
+  position: relative;
 }
 
-.carousel__button:checked {
-  background-image: url(../img/index/carousel/radio-button-checked.svg);
+.carousel__button-current {
+  width: 18px;
+  height: 18px;
+  align-self: center;
+  border-radius: 50%;
 }
 
-.carousel__button:focus {
-  outline: -webkit-focus-ring-color auto 1px;
+.carousel__slides-controls .carousel__button-current::before {
+  border-color: #C1C1C1;
 }
+
+.carousel__button::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .carousel__slide {
   position: relative;
   min-height: 431px;
 }
 
-.hidden-slide {
+.carousel__hidden-slide {
   display: none;
+}
+
+.carousel__slide-current{
+  display: block;
 }
 
 .carousel__slide-info {

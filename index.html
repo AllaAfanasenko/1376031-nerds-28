@@ -7,8 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script src="js/script.js">
-  </script>
 </head>
 
 <body class="page-body">
@@ -57,7 +55,7 @@
       <h2 class="visually-hidden">Карусель</h2>
 
       <ul class="carousel-slides center-container">
-        <li class="carousel__slide">
+        <li class="carousel__slide carousel__hidden-slide carousel__slide-current">
           <h3 class="visually-hidden">Первый слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Долго, дорого, скрупулезно.</p>
@@ -72,7 +70,7 @@
           </div>
         </li>
 
-        <li class="carousel__slide hidden-slide">
+        <li class="carousel__slide carousel__hidden-slide">
           <h3 class="visually-hidden">Второй слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Любим математику <br>
@@ -88,7 +86,7 @@
           </div>
         </li>
 
-        <li class="carousel__slide hidden-slide">
+        <li class="carousel__slide carousel__hidden-slide">
           <h3 class="visually-hidden">Третий слайд в карусели</h3>
           <div class="carousel__slide-info">
             <p class="carousel__title--big">Только ночь,<br>
@@ -105,13 +103,11 @@
         </li>
       </ul>
 
-
-      <form class="carousel__slides-controls" action="https://echo.htmlacademy.ru" method="get">
-        <input class="carousel__button" type="radio" name="carousel__button" value="fist-slide" aria-label="Первый слайд" checked>
-        <input class="carousel__button" type="radio" name="carousel__button" value="second-slide" aria-label="Второй слайд">
-        <input class="carousel__button" type="radio" name="carousel__button" value="third-slide" aria-label="Третий слайд">
-      </form>
-
+      <div class="carousel__slides-controls">
+        <button class="carousel__button carousel__button-current" type="button" aria-label="Первый слайд" data-slide="0"></button>
+        <button class="carousel__button" type="button" aria-label="Второй слайд" data-slide="1"></button>
+        <button class="carousel__button" type="button" aria-label="Третий слайд" data-slide="2"></button>
+      </div>
     </section>
 
     <section class="services center-container">
@@ -223,10 +219,12 @@
       <div class="footer__address">
         <p class="footer__studio-name">Nёrds design studio</p>
         <p class="footer__full-address">
-          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
-          <br>
-          тел. +7 (812) 275-75-75
+          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
         </p>
+        <div class="footer__tel">
+          <span> тел. </span>
+          <a class="footer__tel-number" href="tel:+78122757575"> +7 (812) 275-75-75 </a>
+        </div>
         <a class="button contact-us-button" href="contact-us.html">Напишите нам</a>
       </div>
     </section>
@@ -291,8 +289,8 @@
   </section>
 
 
-  <script src="js/script.js"></script>
-
+  <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

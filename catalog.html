@@ -6,7 +6,7 @@
   <title>Дизайн-студия Nёrds — Каталог</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylemini.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -68,11 +68,11 @@
                 <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
               </div>
               <div class="filter__price-controls">
-                <label class="filter__min-price-label">
-                  от <input class="filter__price-input" type="number" name="min-price" value="0" min="0" step="500">
+                <label class="filter__min-price-label" for="filter__price-input-min-price">
+                  от <input class="filter__price-input" id="filter__price-input-min-price" type="number" name="min-price" value="0" min="0" step="500">
                 </label>
-                <label class="filter__max-price-label">
-                  до <input class="filter__price-input" type="number" name="max-price" value="15000" step="500">
+                <label class="filter__max-price-label" for="filter__price-input-max-price">
+                  до <input class="filter__price-input" id="filter__price-input-max-price" type="number" name="max-price" value="15000" step="500">
                 </label>
               </div>
             </div>
@@ -82,23 +82,23 @@
             <legend class="filter__filter-title">Сетка</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="radio" name="filter-grid" value="adaptive-grid" checked>
+                <label class="filter__check" for="filter__input-adaptive-grid">
+                  <input class="filter__input" id="filter__input-adaptive-grid" type="radio" name="filter-grid" value="adaptive-grid" checked>
                   <span class="filter__radio-button"></span>
                   Адаптивная
                 </label>
               </li>
 
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="radio" name="filter-grid" value="fixed-grid">
+                <label class="filter__check" for="filter__input-fixed-grid">
+                  <input class="filter__input" id="filter__input-fixed-grid" type="radio" name="filter-grid" value="fixed-grid">
                   <span class="filter__radio-button"></span>
                   Фиксированная
                 </label>
               </li>
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="radio" name="filter-grid" value="flex-grid">
+                <label class="filter__check" for="filter__input-flex-grid">
+                  <input class="filter__input" id="filter__input-flex-grid" type="radio" name="filter-grid" value="flex-grid">
                   <span class="filter__radio-button"></span>
                   Резиновая
                 </label>
@@ -110,36 +110,36 @@
             <legend class="filter__filter-title">Особенности:</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="checkbox" name="slider" checked>
+                <label class="filter__check" for="filter__input-slider">
+                  <input class="filter__input" id="filter__input-slider" type="checkbox" name="slider" checked>
                   <span class="filter__checkbox"></span>
                   Слайдер
                 </label>
               </li>
               <li class="filter__item">
-                <label class=" filter__check">
-                  <input class="filter__input" type="checkbox" name="advantages-section">
+                <label class=" filter__check" for="filter__input-advantages-section">
+                  <input class="filter__input" id="filter__input-advantages-section" type="checkbox" name="advantages-section">
                   <span class="filter__checkbox"></span>
                   Блок преимуществ
                 </label>
               </li>
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="checkbox" name="news" checked>
+                <label class="filter__check" for="filter__input-news">
+                  <input class="filter__input" id="filter__input-news" type="checkbox" name="news" checked>
                   <span class="filter__checkbox"></span>
                   Новости
                 </label>
               </li>
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="checkbox" name="galery">
+                <label class="filter__check" for="filter__input-galery">
+                  <input class="filter__input" id="filter__input-galery" type="checkbox" name="galery">
                   <span class="filter__checkbox"></span>
                   Галерея
                 </label>
               </li>
               <li class="filter__item">
-                <label class="filter__check">
-                  <input class="filter__input" type="checkbox" name="rubbish-bin">
+                <label class="filter__check" for="filter__input-rubbish-bin">
+                  <input class="filter__input" id="filter__input-rubbish-bin" type="checkbox" name="rubbish-bin">
                   <span class="filter__checkbox"></span>
                   Корзина
                 </label>
@@ -308,10 +308,12 @@
       <div class="footer__address">
         <p class="footer__studio-name">Nёrds design studio</p>
         <p class="footer__full-address">
-          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
-          <br>
-          тел. +7 (812) 275-75-75
+          191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8
         </p>
+        <div class="footer__tel">
+          <span> тел. </span>
+          <a class="footer__tel-number" href="tel:+78122757575"> +7 (812) 275-75-75 </a>
+        </div>
         <a class="button contact-us-button" href="contact-us.html">Напишите нам</a>
       </div>
     </section>
@@ -376,8 +378,7 @@
   </section>
 
 
-  <script src="js/script.js"></script>
-
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
