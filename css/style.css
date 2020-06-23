@@ -803,8 +803,6 @@ img {
   margin-left: -8px;
 }
 
-.partner__mishka {}
-
 .partner__link {
   opacity: 20%;
 }
@@ -817,12 +815,6 @@ img {
   opacity: 10%;
 }
 
-/* .vertical-line {
-  display: block;
-  width: 2px;
-  height: 52px;
-  background-color: var(--primary-gray);
-} */
 /* catalog page ===================================================================================================*/
 .catalog-page {
   display: grid;
