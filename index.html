@@ -6,7 +6,7 @@
   <title>Дизайн-студия Nёrds — Главная</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylemini.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -202,7 +202,9 @@
           </a>
         </li>
         <li class="partner__item">
-          <a class="partner__link" href="#"><img src="img/index/partners/logo-4-2.png" width="173" height="84" alt="Логотип Сайта вещей для дома Mishka" /></a>
+          <a class="partner__link" href="#">
+            <img src="img/index/partners/logo-4-2.png" width="173" height="84" alt="Логотип Сайта вещей для дома Mishka" />
+          </a>
         </li>
       </ul>
     </section>
@@ -213,9 +215,7 @@
   <footer class="footer">
     <section class="map">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div>
-        <img class="map__map-image" src="img/footer/map-1.png" width="1440" height="400" alt="Студия Нёрдс адрус Санкт-Петербург улица Большая Конюшенная дом 19/8б  телефон +7 (812) 275-75-75" />
-      </div>
+      <div id="map" class="map__map-image"></div>
       <div class="footer__address">
         <p class="footer__studio-name">Nёrds design studio</p>
         <p class="footer__full-address">
@@ -288,9 +288,11 @@
     <button class="modal-contact-us__close" type="submit" aria-label="Закрыть"></button>
   </section>
 
-
-  <script src="js/modal.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/modal_mini.js"></script>
+  <script src="js/slider_mini.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=23a546b3-b588-4e34-b2a7-1017ad34c8c3&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="js/icon_customImage.js" type="text/javascript"></script>
 </body>
 
 </html>
